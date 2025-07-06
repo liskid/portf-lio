@@ -19,7 +19,10 @@
     <script src="https://kit.fontawesome.com/7749f45c50.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <header>
+    <div class="background"></div>
+    <link rel="stylesheet" href="css/main.css">
+
+    <header id="nav">
      <h1>Dev.PEDRO</h1> 
      
      <nav>
@@ -40,12 +43,13 @@
     </header>
 
     <main>
+        <div class="main-wrapper">
           <section class="main-content">
             <article class="text">
                 <h2> Sobre mim </h2> 
                 
                 <p>
-                 Atualmente desenvolvendo habilidades em programação Java, Python,banco de dados( MySQL). inglês em nível intermediário (fala, leitura e escrita) e espanhol entre básico a intermediário. Sou estudante de Sistemas de Informação, atualmente cursando a terceira fase na UNISUL – campus Dib Mussi. Busco uma oportunidade de estágio com o principal objetivo de adquirir experiência prática, aprender e crescer junto com a equipe. Estou totalmente focado em desenvolver minhas competências, contribuir com dedicação e compromisso, priorizando o crescimento profissional e o sucesso da empresa acima de qualquer outro fator. Valorizo muito o trabalho em equipa e estou disposto a enfrentar desafios que me permitam evoluir na área de TI.   
+                Atualmente desenvolvendo habilidades em programação Java, Python,banco de dados( MySQL). inglês em nível intermediário (fala, leitura e escrita) e espanhol entre básico a intermediário. 
                 </p>
 
             </article>
@@ -68,8 +72,13 @@
                 </div>
                  </div>
             </aside>
-            <button type="button" class="btn btn-outline-primary" onclick="window.open('https://drive.google.com/file/d/1z0h5CBgXgl6ksO1JOuGdvcSFTTZjogRt/view?usp=sharing')"> Visualizar currículo </button>
-            </section>
+            
+            <button type="button" class="btncv" onclick="window.open('https://drive.google.com/file/d/1z0h5CBgXgl6ksO1JOuGdvcSFTTZjogRt/view?usp=sharing')"> Visualizar currículo 
+                
+            </button>
+            
+        </section>
+
             
        
 
@@ -78,6 +87,36 @@
            <img src="./img/cropped_circle_image.png" alt="imagem de pedro-henrique"> 
            <figcaption>Pedro Henrique da Silva Souza</figcaption>
           </figure>
+          </div>
+
+          
+          <section class="sec-content">
+            <article class='text'>
+               <h2> Educação </h2> 
+               <p>
+                 Sou estudante de Sistemas de Informação,cursando a quarta fase na UNISUL – campus Dib Mussi.
+                 Busco uma oportunidade de estágio com o principal objetivo de adquirir experiência prática, aprender e crescer junto com a equipe.
+                 Estou totalmente focado em desenvolver minhas competências, contribuir com dedicação e compromisso, priorizando o crescimento profissional e o sucesso da empresa acima de qualquer outro fator.
+                 Valorizo muito o trabalho em equipa e estou disposto a enfrentar desafios que me permitam evoluir na área de TI.
+                </p>
+            </article>
+                <div class="fac">
+                    <a href="https://www.unisul.br/institucional/" target="_blank">
+                    <img src="./img/unisul.png" alt="logo da unisul">
+                </a>
+                </div>
+                
+            
+            
+
+
+
+
+            
+
+          </section>
+        
+      
             
     </main>
 
@@ -86,5 +125,7 @@
             &copy; Pedro Henrique da Silva Souza - Todos os direitos reservados.
         </span>
     </footer>
+    <script src="js/nav.js"></script>
 </body>
+</html>
 </html>
