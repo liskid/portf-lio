@@ -11,17 +11,41 @@
     font-size: 0.9em;
     line-height: 1.4;
     z-index: 1000; 
-    max-width: 220px;
     backdrop-filter: blur(4px); 
     transition: opacity 0.3s ease;
 }
 
-#info strong {
-    display: block;
+.location-info {
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+.location-info strong {
     font-weight: 500;
+    display: block;
+}
+
+.time-weather-container {
+    display: flex;
+    align-items: center;
+   ; /* Alinha à direita */
+    gap: 30px; /* Espaço entre relógio e clima */
 }
 
 #relogio {
     font-size: 1.1em;
     font-weight: bold;
+    white-space: nowrap;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.1em;
+}
+
+.weather-info img {
+    width: 27px;
+    height: 30px;
 }
