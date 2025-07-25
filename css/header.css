@@ -1,40 +1,54 @@
-header{
+.navbar {
     background-color: #222;
-    padding: 25px;
-
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: fixed; top: 0; left: 0; width: 100%; height: 70px;
-    z-index: 999;
-    transition: background-color 0.3s ease;
-    
-}
-header.scrolled{background-color: #333;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2) ;
-}
-
-header h1{
-    font-size: 2.8em;
-    font-weight: 200;
-    cursor: pointer;
-}
-
-header nav {
-    display: flex;
     align-items: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
 
-header nav a{
-    margin-right: 1.3em;
-    font-size: 1.5em;
+.navbar.scrolled {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-header h1, a{
+.navbar-brand {
     color: #00e0ff;
-    transition: 0.2s ease-in-out ;
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-header h1:hover,  header a:hover{
+.navbar-brand:hover {
     color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #00e0ff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    color: #00e0ff;
+    font-size: 1.8rem;
+    cursor: pointer;
 }

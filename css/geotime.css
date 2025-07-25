@@ -1,51 +1,47 @@
 #info {
     position: fixed;
-    bottom: 52px;  
-    right: 30px;   
-    background-color: rgba(51, 51, 51, 0.85); 
+    bottom: 20px;
+    right: 20px;
+    background: rgba(30, 30, 40, 0.9);
     color: #fff;
     padding: 10px 15px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9em;
-    line-height: 1.4;
-    z-index: 1000; 
-    backdrop-filter: blur(4px); 
-    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
 }
 
 .location-info {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     text-align: right;
-}
-
-.location-info strong {
-    font-weight: 500;
-    display: block;
 }
 
 .time-weather-container {
     display: flex;
     align-items: center;
-   ; /* Alinha à direita */
-    gap: 30px; /* Espaço entre relógio e clima */
+    justify-content: space-between;
+    gap: 15px;
 }
 
 #relogio {
+    font-weight: 600;
     font-size: 1.1em;
-    font-weight: bold;
-    white-space: nowrap;
 }
 
-.weather-info {
+.weather-container {
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 1.1em;
+    gap: 8px;
 }
 
-.weather-info img {
-    width: 27px;
-    height: 30px;
+.weather-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.temperature {
+    font-weight: 600;
 }

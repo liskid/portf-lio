@@ -2,133 +2,118 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedrohsilvasouzati</title>
-    <!-- css-->
-     <link rel="stylesheet" href="./css/reset.css">
-     <link rel="stylesheet" href="./css/header.css">
-     <link rel="stylesheet" href="./css/footer.css">
-     <link rel="stylesheet" href="css/main.css">
-     <link rel="stylesheet" href="css/responsive.css">
-     <link rel="stylesheet" href="css/geotime.css">
-    <!-- fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!--icons-->
-    <script src="https://kit.fontawesome.com/7749f45c50.js" crossorigin="anonymous" defer></script>
+    <title>Portfólio - Pedro Henrique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/geotime.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div id="info"></div> <!-- div da loc/horario -->
-    <div class="background"></div> 
-    <link rel="stylesheet" href="css/main.css">
+    <div class="background"></div>
+    <div id="info">
+        <div class="location-info">
+            <strong>Carregando localização...</strong>
+        </div>
+        <div class="time-weather-container">
+            <span id="relogio">00:00</span>
+            <div class="weather-container">
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/01d.png" alt="Clima">
+                <span class="temperature">25°C</span>
+            </div>
+        </div>
+    </div>
 
-    <header id="nav">
-     <h1>Dev.PEDRO</h1> 
-     
-     <nav>
-        <a href="https://github.com/liskid" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-       
-      <a href="https://www.linkedin.com/in/pedro-henrique-da-silva-souza/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-       </a>
-       <a href="https://wa.me/5548984701251" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-       </a>
-       <a href="mailto:pedrohsilvasouzati@gmail.com" target="_blank">
-        <i class="fa-solid fa-envelope"></i>
-       </a>
-     </nav> 
+    <header class="navbar" id="nav">
+        <a href="#" class="navbar-brand">Dev.PEDRO</a>
+        <button class="navbar-toggler" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="https://github.com/liskid" target="_blank" class="nav-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pedro-henrique-da-silva-souza/" target="_blank" class="nav-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5548984701251" target="_blank" class="nav-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:pedrohsilvasouzati@gmail.com" target="_blank" class="nav-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
     </header>
 
-    <main>
-        <div class="main-wrapper">
-          <section class="main-content">
-            <article class="text">
-                <h2> Sobre mim </h2> 
-                
-                <p>
-                Atualmente desenvolvendo habilidades em programação Java, Python,banco de dados( MySQL). inglês em nível intermediário (fala, leitura e escrita) e espanhol entre básico a intermediário. 
-                </p>
-
-            </article>
-            <aside class="techs">
-                <h2>Tecnologias</h2>
-                
-                <div class="cards-container">
-                <div class="card">
-                    <img src="./img/techs/Python-logo-notext.svg.png" alt="logo do python">
-                </div>
-                
-                
-                <div class="card">
-                    <img src="./img/techs/java-icon-1511x2048-6ikx8301.png" alt="logo do java">
-                </div>
-                
-                
-                <div class="card">
-                    <img src="./img/techs/sql-removebg-preview.png" alt="logo do mysql">
-                </div>
-                 </div>
-            </aside>
+    <main class="container-main">
+        <div class="row">
+            <div class="col">
+                <section class="main-content">
+                    <article class="text">
+                        <h2>Sobre mim</h2>
+                        <p>
+                           Atualmente desenvolvendo habilidades em programação Java, Python e banco de dados (MySQL). Inglês em nível intermediário (fala, leitura e escrita) e espanhol entre básico a intermediário.
+                        </p>
+                    </article>
+                    
+                    <aside class="techs">
+                        <h2>Tecnologias</h2>
+                        <div class="tech-cards">
+                            <div class="tech-card">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+                            </div>
+                            <div class="tech-card">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java">
+                            </div>
+                            <div class="tech-card">
+                                <img src="img/techs/sql-removebg-preview.png" alt="MySQL">
+                            </div>
+                        </div>
+                    </aside>
+                    
+                    <a href="https://drive.google.com/file/d/1ZU5WZ1-_eAzOGfWXGOnIZo0QGmYwyhQn/view?usp=sharing" target="_blank" class="btn-cv">
+                        Visualizar currículo
+                    </a>
+                </section>
+            </div>
             
-            <button type="button" class="btncv" onclick="window.open('https://drive.google.com/file/d/1ZU5WZ1-_eAzOGfWXGOnIZo0QGmYwyhQn/view?usp=sharing')"> Visualizar currículo 
-                
-            </button>
-            
-        </section>
-
-            
-       
-
-
-          <figure>
-           <img src="./img/cropped_circle_image.png" alt="imagem de pedro-henrique"> 
-           <figcaption>Pedro Henrique da Silva Souza</figcaption>
-          </figure>
-          </div>
-
-          
-          <section class="sec-content">
-            <article class='text'>
-               <h2> Educação </h2> 
-               <p>
-                 Sou estudante de Sistemas de Informação,cursando a quarta fase na UNISUL – campus Dib Mussi.
-                 Busco uma oportunidade de estágio com o principal objetivo de adquirir experiência prática, aprender e crescer junto com a equipe.
-                 Estou totalmente focado em desenvolver minhas competências, contribuir com dedicação e compromisso, priorizando o crescimento profissional e o sucesso da empresa acima de qualquer outro fator.
-                 Valorizo muito o trabalho em equipa e estou disposto a enfrentar desafios que me permitam evoluir na área de TI.
-                </p>
-            </article>
-                <div class="fac">
-                    <a href="https://www.unisul.br/institucional/" target="_blank">
-                    <img src="./img/unisul.png" alt="logo da unisul">
-                </a>
-                </div>
-                
-            
-            
-
-
-
-
-            
-
-          </section>
-        
-      
-            
+            <div class="col text-center">
+                <figure>
+                    <img src="img/cropped_circle_image.png" alt="Pedro Henrique" class="profile-img">
+                    <figcaption>Pedro Henrique da Silva Souza</figcaption>
+                </figure>
+            </div>
+        </div>
     </main>
+
+    <section class="education-section">
+        <div class="education-content">
+            <article class="text">
+                <h2>Educação</h2>
+                <p>
+                  Sou estudante de Sistemas de Informação, cursando a quarta fase na UNISUL – campus Dib Mussi. Busco uma oportunidade de estágio com o principal objetivo de adquirir experiência prática, aprender e crescer junto com a equipe. Estou totalmente focado em desenvolver minhas competências, contribuir com dedicação e compromisso, priorizando o crescimento profissional e o sucesso da empresa acima de qualquer outro fator. Valorizo muito o trabalho em equipe e estou disposto a enfrentar desafios que me permitam evoluir na área de TI.
+                </p>
+                
+                <div class="fac-logo">
+                    <a href="https://www.unisul.br/institucional/" target="_blank">
+                        <img src="img/unisul.png" alt="UNISUL">
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <footer>
         <span>
             &copy; Pedro Henrique da Silva Souza - Todos os direitos reservados.
         </span>
     </footer>
+
     <script src="js/nav.js"></script>
-    <script src="js/geotime.js"></script> <!-- chamando o js da loc/timer -->
+    <script src="js/geotime.js"></script>
 </body>
-</html>
 </html>
